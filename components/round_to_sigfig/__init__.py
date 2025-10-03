@@ -6,6 +6,7 @@ from esphome.const import (
 )
 from esphome.components.sensor import FILTER_REGISTRY
 
+sensor_ns = cg.esphome_ns.namespace("sensor")
 RoundSigfigFilter = sensor_ns.class_("RoundSigfigFilter", Filter)
 
 @FILTER_REGISTRY.register(

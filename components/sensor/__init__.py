@@ -7,6 +7,7 @@ from esphome.components import mqtt, web_server
 import esphome.config_validation as cv
 from esphome.const import (
     CONF_ABOVE,
+    CONF_ACCURACY,
     CONF_ACCURACY_DECIMALS,
     CONF_ALPHA,
     CONF_BELOW,

@@ -19,7 +19,6 @@ RoundSigfigFilter = sensor_ns.class_("RoundSigfigFilter", Filter)
         key=CONF_ACCURACY,
     ),
 )
-
 async def round_sigfig_filter_to_code(config, filter_id):
     return cg.new_Pvariable(
         filter_id,

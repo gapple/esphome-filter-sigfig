@@ -526,7 +526,7 @@ optional<float> RoundSigfigFilter::new_value(float value) {
     // Based on https://stackoverflow.com/a/13094362/120080
     if (value == 0.0) return 0.0;
 
-    double factor = pow(10.0, digits - ceil(log10(fabs(value))));
+    double factor = pow(10.0, this->digits_ - ceil(log10(fabs(value))));
     return round(value * factor) / factor;
   }
   return value;

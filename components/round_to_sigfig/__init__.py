@@ -4,9 +4,7 @@ import esphome.config_validation as cv
 from esphome.const import (
     CONF_ACCURACY,
 )
-from esphome.util import Registry
-
-FILTER_REGISTRY = Registry()
+from esphome.components.sensor import FILTER_REGISTRY
 
 RoundSigfigFilter = sensor_ns.class_("RoundSigfigFilter", Filter)
 
